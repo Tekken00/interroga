@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apenas um exemplo</title>
+    <link rel="shortcut icon" type="imagex/png" href="../imagens/interrogação.ico">
+</head>
+<style>
+    body{
+         background-color: black;
+    }
+    img{
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin-left: 230px;
+        margin-top: -100px;
+       
+    }
+    h1{
+        color: white;
+        text-align: center;
+        width: 50%;
+        margin-top: 100px;
+        margin-left: 500px;
+    }
+    .borda{
+        animation: piscaPisca 1s infinite;
+        
+    }
+    @keyframes piscaPisca {
+        0%{color: red;}
+        50%{color: white;}
+        100%{color: white;}
+    }
+</style>
+<body>
+       
+    
+</body>
+<script>
+    document.write(`<img src="../imagens/seta2.png">`)
+    document.write(`<h1 class="borda">Vermelho em inglês?</h1><br><br><h1>Sabe a resposta da pergunta acima? Coloque ela no lugar da palavra "exemplo" na url.<br> A seta estará apontando. </h1>`)
+    
+</script>
+</html>

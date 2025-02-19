@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .circulo {
+            border-radius: 100%;
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            margin-top: 35px;
+            align-items: center;
+            margin-left: 45%;
+        }
+        #contorno {
+            border: 2px solid white;
+            width: 900px;
+            height: 900px;
+            float: right;
+              }
+
+    </style>
+</head>
+<body>
+
+    <div class='circulo' id="colorpad" onclick="setRandomColor()">
+
+    </div>
+    <div class="circulo" id="circulo2" onclick="botao2()">
+
+    </div>
+    <div class="circulo" id="circulo3" onclick="botao3()">
+
+    </div>
+        
+   </div>
+    <script>/*
+        function botao1() {
+            var circulo1 = window.document.getElementById('circulo1')
+            
+            circulo1.style.backgroundColor = 'red'
+        }
+        function botao2() {
+            var circulo2 = window.document.getElementById('circulo2')
+            
+            circulo2.style.backgroundColor = 'yellow'
+        }
+        function botao3() {
+            var circulo3 = window.document.getElementById('circulo3')
+            
+            circulo3.style.backgroundColor = 'green'
+        }
+        */
+      
+    
+        function setRandomColor() {
+        var cores = ['red','yellow','green'];
+        var cores1 = cores[Math.floor((Math.random() * cores.length))];
+        $("#colorpad").css("background-color", cores1);
+        if(cores1 == 'red') {
+          alert('Bingo')
+        
+        }
+    }
+    
+    
+    </script>
+</body>
+</html>

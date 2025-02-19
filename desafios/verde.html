@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="../imagens/interrogação.ico">
+    <title>Desafio 5</title>
+    <style>
+        body{
+            background-color: black;
+            
+            
+        }
+        img{
+            
+            cursor: url('../imagens/bola5.png'), auto;
+            
+            
+        }
+        button {
+            background-color: black;
+            margin: 0 auto;
+            display: flex;
+            border: none;
+            padding-top: 100px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+   <button onclick="clicarImagem()"> <img  id='img'  src='../imagens/boliche.png'></button>
+</body>
+<script>
+    var imagem1 = '../imagens/bolaDerrubadaa.png'
+    function clicarImagem(){
+       document.getElementById('img').src = imagem1
+    }
+</script>
+</html>
