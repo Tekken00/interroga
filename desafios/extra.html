@@ -32,7 +32,7 @@
     <div class='circulo' id="colorpad" onclick="setRandomColor()">
 
     </div>
-    <div class="circulo" id="circulo2" onclick="botao2()">
+    <div class="circulo" id="colorpad2" onclick="setRandomColor2()">
 
     </div>
     <div class="circulo" id="circulo3" onclick="botao3()">
@@ -60,15 +60,19 @@
       
     
         function setRandomColor() {
-        var cores = ['red','yellow','green'];
-        var cores1 = cores[Math.floor((Math.random() * cores.length))];
+        let cores = ['red','yellow','green'];
+        let cores1 = cores[Math.floor((Math.random() * cores.length))];
         $("#colorpad").css("background-color", cores1);
-        if(cores1 == 'red') {
-          alert('Bingo')
+        return cores1;
         
-        }
     }
-    
+    function setRandomColor2() {
+        let cores = ['red','yellow','green'];
+        let cores2 = cores[Math.floor((Math.random() * cores.length))];
+        $("#colorpad2").css("background-color", cores2);
+        return cores2;
+    }
+    alert (setRandomColor(),setRandomColor2())
     
     </script>
 </body>
